@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚌 Bus Booking System</h1>
+
+    <form id="bookingForm">
+        <label>Passenger Name</label>
+        <input type="text" id="name" required>
+
+        <label>Source</label>
+        <input type="text" id="source" required>
+
+        <label>Destination</label>
+        <input type="text" id="destination" required>
+
+        <label>Travel Date</label>
+        <input type="date" id="travelDate" required>
+
+        <label>Select Seat</label>
+        <select id="seat">
+            <option>A1</option>
+            <option>A2</option>
+            <option>B1</option>
+            <option>B2</option>
+            <option>C1</option>
+            <option>C2</option>
+        </select>
+
+        <button type="submit">Book Ticket</button>
+    </form>
+
+    <div id="ticket" class="hidden">
+        <h2>Booking Confirmed ✅</h2>
+        <p id="ticketDetails"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
